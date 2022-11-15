@@ -1,0 +1,69 @@
+/* Header Class: mainheader */
+/* Logo Class: nav-logo */
+/* Menu Text class: mainnav */
+/* Button CTA Class: nav-cta */
+
+/* Header Section */
+.mainheader {
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: background-color .5s ease;
+
+}
+
+
+/* backgroung color on scroll */
+.scrolling-active{
+    background-color: white;
+    transition: padding .5s ease;
+
+}
+
+/* add shadown when scroll */
+.scrolling-active{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+    
+}
+/* button color on scroll */
+.scrolling-active .nav-cta .elementor-button {
+    background-color: #009ADD !important;
+    color: white;
+}
+
+/* menu text color change on scroll */
+.scrolling-active .mainnav a{
+  color: black !important;
+}
+
+/* logo change and shrink on scroll */
+.scrolling-active .nav-logo {
+  width: 160px;
+  transition: width .8s ease;
+}
+
+
+/* Underline animation transform */
+.scrolling-active .menu-link:after {
+    margin-bottom : -15px ;
+}
+.scrolling-active .elementor-item-active:after {
+    color: red;
+}
+
+/* logo change and shrink on scroll for tablet*/
+@media only screen and (max-width: 1025px){
+  .scrolling-active .nav-logo {
+  width: 130px;
+
+}
+}
+
+/* logo change and shrink on scroll for mobile*/
+@media only screen and (max-width: 100px){
+    .scrolling-active .nav-logo {
+    width: 50px;
+
+  }
+  }
